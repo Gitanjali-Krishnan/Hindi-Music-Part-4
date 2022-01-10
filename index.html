@@ -44,7 +44,7 @@
     <audio src="Ghar Aaja Pardesi.mp3" controls id="audio" style="display: none;"></audio>
   
     <script>
-        var images=["TA-DA.png","26.png","27.png","28.png","29.png","30.png","31.png","32.png","33.png","34.png","35.png","36.png","37.png","38.png","39.png","40.png","41.png","42.png","43.png","44.png","45.png","46.png","47.png","48.png"]
+        var images=["TA-DA.png","26.png","27.png","28.png","29.png","30.png","31.png","32.png","33.png","34.png","35.png","36.png","37.png","38.png","39.png","40.png","41.png","42.png","43.png","44.png","45.png","46.png","47.png","48.png","49.png"]
         var player = false;
         function start(){
             document.getElementById("audio").play()
@@ -58,10 +58,10 @@
             document.getElementById("lol").style.display="inline-block"
             document.getElementById("image").classList.remove("rotate")
         }
-        var songs = ["Ghar Aaja Pardesi.mp3","Haa Jab.mp3","Ho Gaya Hai.mp3","Holi Ki Din.mp3","Jhalak.mp3","Jimikki Kammal.mp3","Mangalyam.m4a","Piyu Bole.mp3","Taal Se Taal.mp3","Tujhe Dekha To.mp3","Yeh Dosti.mp3","Aal Izz Well.mp3","Zoobi Doobi.mp3","Give Me Some Sunshine.mp3","Gipsy Danger.mp3","Pacific Rim.mp3","Afghan Jalebi.mp3","Saware.mp3","Kannalane.mp3","Naina.mp3","Jai Ho.mp3","Dola Re Dola.mp3"];
+        var songs = ["Ghar Aaja Pardesi.mp3","Haa Jab.mp3","Ho Gaya Hai.mp3","Holi Ki Din.mp3","Jhalak.mp3","Jimikki Kammal.mp3","Mangalyam.m4a","Piyu Bole.mp3","Taal Se Taal.mp3","Tujhe Dekha To.mp3","Yeh Dosti.mp3","Aal Izz Well.mp3","Zoobi Doobi.mp3","Give Me Some Sunshine.mp3","Gipsy Danger.mp3","Pacific Rim.mp3","Afghan Jalebi.mp3","Saware.mp3","Kannalane.mp3","Naina.mp3","Jai Ho.mp3","Dola Re Dola.mp3","Aira Gaira.mp3","Chikni Chameli.mp3","First Class.mp3"];
         var i = 0;
         function next(){
-            i =(i+1)%22;
+            i =(i+1)%25;
             document.getElementById("audio").src= songs[i];
             document.getElementById("image").src=images[i];
             start()
